@@ -99,7 +99,7 @@ WINDOWS_AUTO_BUILDER ?= 0
 # Setup extra cflags
 EXTRA_CFLAGS ?=
 EXTRA_CPP_FLAGS ?=
-EXTRA_CFLAGS += -Wno-format-security -Wno-trigraphs
+EXTRA_CFLAGS += -Wno-format-security -Wno-trigraphs -Wno-implicit-function-declaration
 
 dev:; @$(MAKE) DEVELOPMENT=1
 
