@@ -488,7 +488,7 @@ int SDL_main(int argc, char *argv[]) {
 int main(int argc, char *argv[]) {
 #endif
 
-// create com.maniscat2.sm64coopdx folder
+// create com.enessmr.sm64coopdxomm folder
 #ifdef TARGET_ANDROID
     char gamedir[SYS_MAX_PATH] = { 0 };
     const char *basedir = get_gamedir();
