@@ -1,3 +1,4 @@
+// Line 1 should be EXACTLY this:
 static const struct Animation anim_D1[] = {
     1,
     0,
@@ -9,7 +10,6 @@ static const struct Animation anim_D1[] = {
     anim_D1_indices,
     0,
 };
-
 
 static const u16 anim_D1_indices[] = {
     0x0001, 0x0000, 0x0013, 0x0001, 0x0001, 0x0014, 0x0001, 0x0015, 0x0001,

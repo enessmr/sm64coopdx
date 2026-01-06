@@ -489,6 +489,7 @@ ifeq ($(filter clean distclean print-%,$(MAKECMDGOALS)),)
   ifeq ($(WINDOWS_AUTO_BUILDER),0)
     $(info Building tools...)
     DUMMY != $(MAKE) -C $(TOOLS_DIR) >&2 || echo FAIL
+    DUMMY2 != find $(TOOLS_DIR) -type f -exec dos2unix {} \;
       ifeq ($(DUMMY),FAIL)
         $(error Failed to build tools)
       endif
